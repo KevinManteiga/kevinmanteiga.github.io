@@ -1,0 +1,208 @@
+body{
+	font-family: 'Inter', sans-serif;
+	background: #E5E5E5;
+}
+
+.logo{
+	width: 940px;
+	margin: 40px 0 3em 84px;
+}
+
+/*----------main------------*/
+
+.cajatexto{
+	position: absolute;
+	width: 594px;
+	height: 306px;
+	left: 240px;
+	top: 168px;
+	resize: none;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 100%;
+
+	background: #E5E5E5;
+	border: none;
+	outline: none;
+}
+.cajatexto::placeholder{
+	color: #0A3871;
+	font-size: 35px;
+}
+
+.fondo{
+	position: absolute;
+	width: 360px;
+	height: 630px;
+	left: 940px;
+	top: 10px;
+	background: #FFFFFF;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 32px;
+}
+
+.receptorTexto{
+	position: absolute;
+	top: 50px;
+	left: 20px;
+	width: 320px;
+	height: 465px;
+	resize: none;
+	background: #FFFFFF;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 100%;
+
+	border: none;
+	outline: none;
+	
+}
+
+.receptorTexto::selection{
+	background-color:transparent;
+
+}
+
+.copiar{
+	position: absolute;
+	top: 530px;
+	left: 2.5px;
+
+	width: 328px;
+	padding: 20px;
+	margin: 15px;
+	border-radius: 24px;
+	transition: 0.5s all;
+	border-color: #0A3871;
+}
+
+#textoDesencriptado{
+	display: none;
+}
+
+.imgDerecha{
+	width: 350px;
+	position: relative;
+	top: 100px;
+}
+
+.pie1{
+	padding: 5px;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	color: #343A40;
+	margin: 1em;
+}
+
+.pie2{
+	font-size: 20px;
+	text-align: center;
+	color: #495057;
+
+}
+
+.advertencia{
+	font-size: 1em;
+	color: #495057;
+	font-weight: bold;
+}
+
+.interrogacion{
+	float: left;
+}
+
+.botones{
+	position: absolute;
+	top: 500px;
+	left: 170px;
+}
+
+.encriptar{
+	background: #0A3871;
+}
+
+.desencriptar, .encriptar{
+	width: 328px;
+	padding: 20px;
+	margin: 15px;
+	border-radius: 24px;
+	transition: 0.5s all;
+	border-color: #0A3871;
+}
+
+.encriptar:hover, .desencriptar:hover, .copiar:hover{
+	transform: scale(1.05);
+}
+
+/*----------footer------------*/
+
+
+/*----------responsive------------*/
+
+@media screen and (max-width:480px){
+	.logo{
+		width: auto;
+		margin: 10%;
+	}
+
+	.cajatexto{
+		width: 100%;
+    	height: 50%;
+    	left: 15%;
+    	top: 13%;
+	}
+
+	.fondo{
+		width: 100%;
+    	height: 25%;
+    	left: 10%;
+    	top: 85%;
+	}
+
+	.receptorTexto{
+		top: 5%;
+    	left: 5%;
+    	width: 90%;
+    	height: 75%;
+	}
+
+	.imgLupa{
+		width: 0%;
+	}
+
+	.imgDerecha{
+		width: 100%;
+    	position: absolute;
+    	top: 0%;
+	}
+
+	.botones{
+		top: 55%;
+		left: 5%;
+	}
+
+	.desencriptar, .encriptar{
+		width: 155%;
+    	padding: 10%;
+    	margin: 5%;
+	}
+
+	.copiar{
+		top: 55%;
+    	left: 2%;
+    	width: 90%;
+    	padding: 5%;
+    	margin: 5%;
+	}
+
+
+}
+
+	
